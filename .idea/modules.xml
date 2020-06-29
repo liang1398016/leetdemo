@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/1. 两数之和/1. 两数之和.iml" filepath="$PROJECT_DIR$/1. 两数之和/1. 两数之和.iml" />
       <module fileurl="file://$PROJECT_DIR$/1480.维数组的动态和/1480.维数组的动态和.iml" filepath="$PROJECT_DIR$/1480.维数组的动态和/1480.维数组的动态和.iml" />
       <module fileurl="file://$PROJECT_DIR$/2. 两数相加/2. 两数相加.iml" filepath="$PROJECT_DIR$/2. 两数相加/2. 两数相加.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3. 无重复字符的最长子串/3. 无重复字符的最长子串.iml" filepath="$PROJECT_DIR$/3. 无重复字符的最长子串/3. 无重复字符的最长子串.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/leetdemo.iml" filepath="$PROJECT_DIR$/.idea/leetdemo.iml" />
     </modules>
   </component>
