@@ -1,5 +1,7 @@
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -45,9 +47,49 @@ class Solution {
         if(length < set.size())  length = set.size();
         return length;
     }
+
+    /**
+     * 滑动窗口
+     * @param s
+     * @return
+     */
+    public int lengthOfLongestSubstring1(String s) {
+        ArrayList<Character> arr = new ArrayList<Character>();
+        int length = 0;
+
+        for(int i  = 0, j = 0, len = s.length(); i <= len -1; i ++){
+            Character c = s.charAt(i);
+            if(arr.contains(c)){
+                while (arr.remove(0) != c);
+                j++;
+            }
+            arr.add(c);
+            if(length < arr.size())  length = arr.size();
+            System.out.println(arr);
+        }
+        return length;
+    }
+
+    public int lengthOfLongestSubstring2(String s) {
+        if (s.length()==0) return 0;
+        HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+        int max = 0;
+        int left = 0;
+        for(int i = 0; i < s.length(); i ++){
+            if(map.containsKey(s.charAt(i))){
+                left = Math.max(left,map.get(s.charAt(i)) + 1);
+            }
+            map.put(s.charAt(i),i);
+            max = Math.max(max,i-left+1);
+        }
+        return max;
+
+    }
+
+
     @Test
     public void test(){
-        String str = "dvdf";
-        System.out.println(lengthOfLongestSubstring(str));
+        String str = "abcabcbb";
+        System.out.println(lengthOfLongestSubstring2(str));
     }
 }

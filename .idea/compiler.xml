@@ -10,6 +10,7 @@
         <module name="1480.维数组的动态和" />
         <module name="2. 两数相加" />
         <module name="3. 无重复字符的最长子串" />
+        <module name="4. 寻找两个正序数组的中位数" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,6 +18,7 @@
       <module name="1480.维数组的动态和" target="1.5" />
       <module name="2. 两数相加" target="1.5" />
       <module name="3. 无重复字符的最长子串" target="1.5" />
+      <module name="4. 寻找两个正序数组的中位数" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
