@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="1. 两数之和" />
         <module name="1480.维数组的动态和" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="1. 两数之和" target="1.5" />
       <module name="1480.维数组的动态和" target="1.5" />
     </bytecodeTargetLevel>
   </component>
