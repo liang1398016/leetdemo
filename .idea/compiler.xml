@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="1. 两数之和" />
         <module name="1480.维数组的动态和" />
+        <module name="2. 两数相加" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="1. 两数之和" target="1.5" />
       <module name="1480.维数组的动态和" target="1.5" />
+      <module name="2. 两数相加" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

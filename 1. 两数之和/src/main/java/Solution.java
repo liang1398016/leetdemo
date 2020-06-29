@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。
  *
@@ -24,11 +27,21 @@ class Solution {
                 if (nums[i] + nums[j] == target){
                     return new int[]{i, j};
                 }
-
             }
         }
         return null;
     }
 
+    public int[] twoSum1(int[] nums, int target){
+        Map<Integer, Integer> hashMap = new HashMap<Integer, Integer>();
 
+        for(int i = 0, len = nums.length; i <= len - 1; i ++){
+            int buffer = target - nums[i];
+            if(hashMap.containsKey(buffer)){
+                return new int[]{i, hashMap.get(buffer)};
+            }
+            hashMap.put(nums[i],i);
+        }
+        throw new IllegalArgumentException("No two sum solution");
+    }
 }
