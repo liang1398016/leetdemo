@@ -1,9 +1,6 @@
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 /**
  * 3. 无重复字符的最长子串
@@ -70,26 +67,26 @@ class Solution {
         return length;
     }
 
-    public int lengthOfLongestSubstring2(String s) {
-        if (s.length()==0) return 0;
-        HashMap<Character, Integer> map = new HashMap<Character, Integer>();
-        int max = 0;
-        int left = 0;
-        for(int i = 0; i < s.length(); i ++){
-            if(map.containsKey(s.charAt(i))){
-                left = Math.max(left,map.get(s.charAt(i)) + 1);
-            }
-            map.put(s.charAt(i),i);
-            max = Math.max(max,i-left+1);
-        }
-        return max;
+    public int lengthOfLongestSubstring2(String s){
+        Map<Character, Integer> buffer = new HashMap<Character, Integer>();
+        int MAX = 0;
 
+        for(int left = 0, right  = 0, len = s.length(); right <= len -1; right ++){
+            if(buffer.containsKey(s.charAt(right))){
+                left = Math.max(left, buffer.get(s.charAt(right))+1);
+                buffer.remove(s.charAt(right));
+            }
+            buffer.put(s.charAt(right),right);
+
+            MAX = Math.max(MAX,right + 1 - left);
+        }
+        return MAX;
     }
 
 
     @Test
     public void test(){
-        String str = "abcabcbb";
+        String str = "";
         System.out.println(lengthOfLongestSubstring2(str));
     }
 }

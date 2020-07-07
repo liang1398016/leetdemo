@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>4. 寻找两个正序数组的中位数</groupId>
-    <artifactId>4. 寻找两个正序数组的中位数</artifactId>
+    <groupId>5. 最长回文子串</groupId>
+    <artifactId>5. 最长回文子串</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>
         <dependency>

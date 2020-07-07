@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/2. 两数相加/2. 两数相加.iml" filepath="$PROJECT_DIR$/2. 两数相加/2. 两数相加.iml" />
       <module fileurl="file://$PROJECT_DIR$/3. 无重复字符的最长子串/3. 无重复字符的最长子串.iml" filepath="$PROJECT_DIR$/3. 无重复字符的最长子串/3. 无重复字符的最长子串.iml" />
       <module fileurl="file://$PROJECT_DIR$/4. 寻找两个正序数组的中位数/4. 寻找两个正序数组的中位数.iml" filepath="$PROJECT_DIR$/4. 寻找两个正序数组的中位数/4. 寻找两个正序数组的中位数.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5. 最长回文子串/5. 最长回文子串.iml" filepath="$PROJECT_DIR$/5. 最长回文子串/5. 最长回文子串.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/leetdemo.iml" filepath="$PROJECT_DIR$/.idea/leetdemo.iml" />
     </modules>
   </component>
